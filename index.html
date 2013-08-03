@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Drivnal by drivnal</title>
+    <title>Drivnal by zachhuff386</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
@@ -20,7 +21,10 @@
   <body>
       <div id="header">
         <nav>
-          <li class="fork"><a href="https://github.com/drivnal">View On GitHub</a></li>
+          <li class="fork"><a href="https://github.com/zachhuff386/drivnal">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/zachhuff386/drivnal/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/zachhuff386/drivnal/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
         </nav>
       </div><!-- end header -->
 
@@ -28,48 +32,64 @@
 
       <section>
         <div id="title">
-          <h1>Drivnal</h1>
+          <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMTUwMC4xNzAyIgogICBoZWlnaHQ9IjU0NC43OTU4NCIKICAgaWQ9InN2ZzIiCiAgIHZlcnNpb249IjEuMSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMC40OC40IHI5OTM5IgogICBzb2RpcG9kaTpkb2NuYW1lPSJkcml2bmFsLnN2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJiYXNlIgogICAgIHBhZ2Vjb2xvcj0iIzIxMjEyMSIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjEiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjM1IgogICAgIGlua3NjYXBlOmN4PSI5NTguMzE4MjgiCiAgICAgaW5rc2NhcGU6Y3k9IjIwMC4wMDM1MyIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBmaXQtbWFyZ2luLXRvcD0iMCIKICAgICBmaXQtbWFyZ2luLWxlZnQ9IjAiCiAgICAgZml0LW1hcmdpbi1yaWdodD0iMCIKICAgICBmaXQtbWFyZ2luLWJvdHRvbT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE5MTQiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iOTk4IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlIC8+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMzguNDA1NjksLTkxNS45ODA1OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOiM0NjQ2NDY7ZmlsbC1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDU4MC44NjU5MSwxNDU5Ljc2NzQgYyAtMTIuNjg0MjQsLTEuMjc0IC0zNS45NjcyOSwtNi4wOTQyIC01MC4wNDU1NywtMTAuMzYwNyAtMzIuMzYzMjMsLTkuODA3OCAtNjQuNTUwMDcsLTI2Ljg5NDkgLTkxLjM1MDkzLC00OC40OTU1IC0xMi42MTIwMSwtMTAuMTY0OSAtMzYuODE0NDEsLTM1LjAxNDcgLTQ1Ljc0NjYyLC00Ni45NzA0IC0zMC44NTY5NiwtNDEuMzAxNiAtNDkuNTU4LC04OC42MzQxIC01NC4yOTYwNiwtMTM3LjQyMzcgLTEuMzYxMzksLTE0LjAxODcgLTEuMzYxMzksLTQyLjEzMzggMCwtNTYuMTUyNiA0LjczODA2LC00OC43ODk1IDIzLjQzOTEsLTk2LjEyMiA1NC4yOTYwNiwtMTM3LjQyMzcgOC45MzIyMSwtMTEuOTU1NiAzMy4xMzQ2MSwtMzYuODA1NTEgNDUuNzQ2NjIsLTQ2Ljk3MDMxIDQwLjc0Njc0LC0zMi44NDA2NCA5Mi4xNzkyNywtNTQuMDAyNDYgMTQzLjMyMDE4LC01OC45Njg4NiAxNC4wMTg3OCwtMS4zNjEzOSA0Mi4xMzM4NiwtMS4zNjEzOSA1Ni4xNTI2NCwwIDM5Ljg3ODE0LDMuODcyNjUgODQuOTk3NjQsMTkuMzk0MjMgMTE3LjUwNDM0LDQwLjQyMjc1IGwgNy4yMDIxLDQuNjU5MDEgLTMuMzkxNCwyLjgwOSBjIC0xLjg2NTIsMS41NDQ5IC0yMC40OTE0LDE3LjI3NTUgLTQxLjM5MTQsMzQuOTU2ODkgLTI4Ljg5MzEsMjQuNDQzNTIgLTM4LjQ3OTMsMzIuMDI3NjIgLTQwLDMxLjY0NjEyIC0xLjEsLTAuMjc1OSAtNy44NSwtMi41MDYgLTE0Ljk5OTk2LC00Ljk1NTggLTM1LjA3Mzc1LC0xMi4wMTc0IC02OC40NzE2MiwtMTIuMTk5MSAtMTA0Ljg0NTg2LC0wLjU3MDQgLTUyLjA4NjI5LDE2LjY1MTcgLTkzLjk3NDExLDU4LjUzOTUgLTExMC42MjU3OSwxMTAuNjI1OCAtMTEuNDM5MywzNS43ODIgLTExLjQ0Mzk3LDY3Ljg5NSAtMC4wMTUxLDEwMy42NDQ1IDE2LjY2NzU5LDUyLjEzNiA1OC41MzQxNiw5NC4wMTQ4IDExMC42NDA4OCwxMTAuNjczIDM1Ljc4MjAxLDExLjQzOTMgNjcuODk1MDgsMTEuNDQzOSAxMDMuNjQ0NSwwLjAxNSA1Mi4xNTY1MywtMTYuNjc0MSA5NC4wMTQwMywtNTguNTMxNiAxMTAuNjg4MTMsLTExMC42ODgxIDkuMzY4NSwtMjkuMzA0NyAxMC45NjM1LC01Ni4zMDg0IDUuMDI3NCwtODUuMTEzMiBsIC0xLjc5LC04LjY4NTUgMi42Mzc5LC0yLjE1OSBjIDEuNDUwOSwtMS4xODc1IDIwLjE4NzMsLTE2Ljk4MjggNDEuNjM2NSwtMzUuMTAwNyBsIDM4Ljk5ODYsLTMyLjk0MTUgMi44NTM4LDYuNjAwNiBjIDcuMzY4MywxNy4wNDIzIDE0LjY5MzUsNDMuNDY3MyAxOC4yMzY5LDY1Ljc4ODQgMi4xNDk4LDEzLjU0MiAyLjk3OCw0OS45MjI1IDEuNTAxNiw2NS45NTg0IC00LjYxMDQsNTAuMDc1OCAtMjMuMDk4LDk3LjM5NDUgLTU0LjQ0NjMsMTM5LjM1MzggLTguOTMyMywxMS45NTU3IC0zMy4xMzQ3LDM2LjgwNTUgLTQ1Ljc0NjcsNDYuOTcwNCAtNDAuNzQ2NywzMi44NDA2IC05Mi4xNzkyLDU0LjAwMjQgLTE0My4zMjAxNSw1OC45Njg4IC0xMi44MDk3NiwxLjI0NCAtNDUuMTk1NjcsMS4xODEyIC01OC4wNzYzMiwtMC4xMTI2IHogbSAxNzguMjQ0MTYsLTM1NS4xMDgxIGMgLTMuMTY1NywtNS42MjAyIC02LjM5MjcsLTExLjExODUgLTcuMTcxMiwtMTIuMjE4NSAtMS4zMzgsLTEuODkwOCAwLjY5MDUsLTMuNzc0NiAzNy4xNDkxLC0zNC41IDIxLjIxMDQsLTE3Ljg3NSAzOS4wNjI0LC0zMi42MTYxIDM5LjY3MTEsLTMyLjc1OCAxLjE4LC0wLjI3NTEgMTUuNjI4MywyMC40NjQ1IDE1LjYxNDgsMjIuNDE0MSAtMC4wMSwxLjA3MzkgLTc3LjgwNzMsNjcuMzgyMSAtNzguOTc4Miw2Ny4zMTI0IC0wLjI5MTQsLTAuMDE3IC0zLjExOTksLTQuNjI5OCAtNi4yODU2LC0xMC4yNSB6IG0gLTM4LjI0NDIsLTQ2LjM2NzYgYyAtNS41LC00LjU4MzEgLTEwLjM3NSwtOC4zMzcgLTEwLjgzMzMsLTguMzQxOSAtMC40NTgzLC0wLjAxIC0wLjY4MzMsLTAuNDU3IC0wLjUsLTEuMDA0NyAwLjE4MzMsLTAuNTQ3NiAxOC4xMDgzLC0xNi4wMjczIDM5LjgzMzMsLTM0LjM5OTQgbCAzOS41LC0zMy40MDM2MSA5Ljc1NDcsOS42MzUzIGMgNS4zNjUxLDUuMjk5MzkgOS42NDAxLDkuOTEyNzEgOS41LDEwLjI1MTgxIC0wLjE0LDAuMzM5MiAtMTUuMTA0NywxMy4xMjg3IC0zMy4yNTQ3LDI4LjQyMTIgLTE4LjE1LDE1LjI5MjUgLTM1LjQ3NSwyOS45MTI3IC0zOC41LDMyLjQ4OTQgbCAtNS41LDQuNjg0OSAtMTAsLTguMzMzIHoiCiAgICAgICBpZD0icGF0aDMyNjYiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPgogICAgPHRleHQKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgICBzdHlsZT0iZm9udC1zaXplOjQwcHg7Zm9udC1zdHlsZTpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2xpbmUtaGVpZ2h0OjEyNSU7bGV0dGVyLXNwYWNpbmc6MHB4O3dvcmQtc3BhY2luZzowcHg7ZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO2ZvbnQtZmFtaWx5OlNhbnMiCiAgICAgICB4PSI0NjkuMDY2MzUiCiAgICAgICB5PSIxMzE3LjYxNzciCiAgICAgICBpZD0idGV4dDQwMzYiCiAgICAgICBzb2RpcG9kaTpsaW5lc3BhY2luZz0iMTI1JSI+PHRzcGFuCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiCiAgICAgICAgIGlkPSJ0c3BhbjQwMzgiCiAgICAgICAgIHg9IjQ2OS4wNjYzNSIKICAgICAgICAgeT0iMTMxNy42MTc3IgogICAgICAgICBzdHlsZT0iZm9udC1zaXplOjM3NnB4O2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXN0cmV0Y2g6bm9ybWFsO3RleHQtYWxpZ246c3RhcnQ7bGluZS1oZWlnaHQ6MTI1JTt3cml0aW5nLW1vZGU6bHItdGI7dGV4dC1hbmNob3I6c3RhcnQ7ZmlsbDojZjhmOGY4O2ZpbGwtb3BhY2l0eToxO2ZvbnQtZmFtaWx5OlVSVyBCb29rbWFuIEw7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpVUlcgQm9va21hbiBMIEJvbGQiPmRyaXZuYWw8L3RzcGFuPjwvdGV4dD4KICAgIDxmbG93Um9vdAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIGlkPSJmbG93Um9vdDQwNDAiCiAgICAgICBzdHlsZT0iZm9udC1zaXplOjQwcHg7Zm9udC1zdHlsZTpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2xpbmUtaGVpZ2h0OjEyNSU7bGV0dGVyLXNwYWNpbmc6MHB4O3dvcmQtc3BhY2luZzowcHg7ZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO2ZvbnQtZmFtaWx5OlNhbnMiCiAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMjYuMzgxMDQsOTEwLjIyMjYpIj48Zmxvd1JlZ2lvbgogICAgICAgICBpZD0iZmxvd1JlZ2lvbjQwNDIiPjxyZWN0CiAgICAgICAgICAgaWQ9InJlY3Q0MDQ0IgogICAgICAgICAgIHdpZHRoPSI2MC42MDkxNTQiCiAgICAgICAgICAgaGVpZ2h0PSI3Ni43NzE1OTEiCiAgICAgICAgICAgeD0iMzQ3LjQ5MjQ2IgogICAgICAgICAgIHk9Ii0zOTQuNTQzNCIgLz48L2Zsb3dSZWdpb24+PGZsb3dQYXJhCiAgICAgICAgIGlkPSJmbG93UGFyYTQwNDYiIC8+PC9mbG93Um9vdD4gIDwvZz4KPC9zdmc+Cg==" alt="Brand">
           <p></p>
           <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/drivnal">drivnal</a></span>
+          <span class="credits left">Project maintained by <a href="https://github.com/zachhuff386">zachhuff386</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="linux-backup-utility-with-web-interface" class="anchor" href="#linux-backup-utility-with-web-interface"><span class="octicon octicon-link"></span></a>Linux Backup Utility with Web Interface</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Drivnal is a backup utility created using rsync with a web interface to manage snapshots and restore files. Similar to Time Machine all backups store only the changed files from the previous backup and creates hard links to unchanged files. Unchanged files are never stored more then once on the backup destination.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h3>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h3>
+
+<p>A demo of the web interface is available at <a href="demo">demo</a>. The demo use's JavaScript to emulate some of the server's functionality, not all functionality that is available with a normal install is working in the demo.</p>
+
+<h3>
+<a name="hard-links" class="anchor" href="#hard-links"><span class="octicon octicon-link"></span></a>Hard Links</h3>
+
+<p>Hard link's allow a file's data to be stored in multiple location's. Having only one copy of the data but multiple file path's that will all link back to the same data. The data will remain allocated until all the link's are deleted. Below is an illustration showing three snapshot's that have three identical file's, when the snapshot's are created instead of creating a new copy of the file a hard link is used. Each of the snapshot's are independent from the other snapshot's so even if two of the snapshot's are deleted the file data would still be available in the third snapshot. If one of the file's were modified a new copy of the changed file data would be created leaving the previous file data and hard links unchanged.</p>
+
+<p><img src="images/hard_links.png" alt="Hard Links"></p>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>Application is still in development and should not be used to backup important files. Package's won't be released until beta is finished. Until then the commands below can be used to run the application.</p>
+
+<pre><code>$ git clone https://github.com/drivnal/drivnal.git
+$ cd drivnal
+$ python2 server.py
+Open http://localhost:6500/
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h3>
+<a name="bug-reporting" class="anchor" href="#bug-reporting"><span class="octicon octicon-link"></span></a>Bug Reporting</h3>
+
+<p>Please report all bug's to the bug tracker on the <a href="https://github.com/drivnal/drivnal/issues">issues</a> page.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Additional documentation can be found on the <a href="https://github.com/drivnal/drivnal/wiki">wiki</a> page.</p>
       </section>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-20492194-9");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
