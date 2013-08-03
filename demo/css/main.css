@@ -5817,6 +5817,9 @@ button:focus {
   height: 100%;
   margin-top: 20px;
 }
+.backup .object-list table {
+  width: 100%;
+}
 .backup .object-list colgroup {
   width: 100%;
 }
