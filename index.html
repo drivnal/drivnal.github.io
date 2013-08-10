@@ -59,7 +59,19 @@
 <h3>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
 
-<p>Application is still in development and should not be used to backup important files. Package's won't be released until beta is finished. Until then the commands below can be used to run the application.</p>
+<p>Packages are available on <a href="https://aur.archlinux.org/packages/drivnal">Arch Linux AUR</a> the commands below can be used to install and enable the service.</p>
+
+<pre><code>$ yaourt -S drivnal
+# Start drivnal daemon
+$ systemctl start drivnal.service
+# Enable daemon to auto start on boot
+$ systemctl enable drivnal.service
+</code></pre>
+
+<h3>
+<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h3>
+
+<p>The commands below can be used to test the application without installing.</p>
 
 <pre><code>$ git clone https://github.com/drivnal/drivnal.git
 $ cd drivnal
