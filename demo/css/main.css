@@ -5498,6 +5498,9 @@ button:focus {
   -o-transition: border 0.2s;
   transition: border 0.2s;
 }
+.backup .volume .settings button {
+  padding: 3px 0;
+}
 .backup .volume .settings .setting-error {
   margin-top: -13px;
   position: absolute;
@@ -5838,6 +5841,23 @@ button:focus {
   min-width: 20px;
   max-width: 20px;
 }
+.backup .object-list .select-header {
+  padding-left: 5px;
+}
+.backup .object-list .select-header .select {
+  width: 11px;
+  height: 11px;
+  border: solid 1px #ababab;
+}
+.backup .object-list .select-header .select.selected:hover {
+  border: solid 1px #858585;
+}
+.backup .object-list .select-header .select.selected .select-inner {
+  width: 15px;
+  height: 15px;
+  background-position: -5px -6px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVAQMAAACT2TfVAAAABlBMVEXd3d10dHThX6XJAAAAAXRSTlMAQObYZgAAABFJREFUCNdjYCASMP+DYCIAAFCqAgPY2xgtAAAAAElFTkSuQmCC');
+}
 .backup .object-list .title-col-group,
 .backup .object-list .title-header,
 .backup .object-list .title-col {
@@ -5876,7 +5896,7 @@ button:focus {
   background-color: #c5e4fc;
 }
 .backup .object-list .select-col {
-  border-bottom: solid 1px #808080;
+  border-bottom: solid 1px #ababab;
   width: 20px;
   max-width: 20px;
   padding: 5px 0px 3px 5px;
@@ -5884,7 +5904,10 @@ button:focus {
 .backup .object-list .select {
   width: 11px;
   height: 11px;
-  border: solid 1px #808080;
+  border: solid 1px #ababab;
+}
+.backup .object-list .select:hover {
+  border: solid 1px #858585;
 }
 .backup .object-list .select.selected .select-inner {
   width: 15px;
@@ -5895,7 +5918,7 @@ button:focus {
 .backup .object-list .title-col,
 .backup .object-list .size-col,
 .backup .object-list .modified-col {
-  border-bottom: solid 1px #808080;
+  border-bottom: solid 1px #ababab;
 }
 .backup .dir-name:hover {
   text-decoration: underline;
