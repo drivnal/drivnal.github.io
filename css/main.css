@@ -148,7 +148,7 @@ a.anchor {
 .intro-info .info-label.one {
   position: relative;
   top: 113px;
-  left: 154px;
+  left: 151px;
 }
 
 .intro-info .info-label.one .description {
@@ -159,7 +159,7 @@ a.anchor {
 .intro-info .info-label.two {
   position: relative;
   top: 170px;
-  left: 250px;
+  left: 240px;
 }
 
 .intro-info .info-label.two .description {
@@ -170,7 +170,7 @@ a.anchor {
 .intro-info .info-label.three {
   position: relative;
   top: 260px;
-  left: 200px;
+  left: 193px;
 }
 
 .intro-info .info-label.three .description {
@@ -183,7 +183,7 @@ a.anchor {
   padding-top: 5px;
   background-image: url('../img/background3.png');
   background-position: center center;
-  background-color: #0f0f0f;
+  background-color: #0c0c0c;
 }
 
 .intro-install .title {
