@@ -1,0 +1,205 @@
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+
+a.anchor {
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+.navbar {
+  background-color: #191919;
+  min-height: 80px;
+  border-radius: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.navbar .nav {
+  float: right;
+}
+
+.navbar .navbar-brand {
+  padding: 6px 22px 0 22px;
+  max-width: none;
+}
+
+.navbar img {
+  display: inline-block;
+  width: 200px;
+  height: 72px;
+}
+
+.navbar .nav > li > a {
+  font-size: 1.3em;
+  padding: 32px 40px 32px 40px;
+}
+
+.navbar .nav .active a,
+.navbar .nav .active a:focus {
+  background-color: #1a1a1a;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #ffffff;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #ffffff;
+}
+
+.intro {
+  margin-top: 20px;
+  height: 665px;
+  background-image: url('../img/background1.png');
+  background-position: center center;
+  background-color: #030303;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.intro img {
+  width: 800px;
+  margin: 125px auto 40px auto;
+  display: block;
+}
+
+.intro .intro-label {
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+.intro .intro-button-group {
+  margin: 45px auto 0 auto;
+  width: 485px;
+}
+
+.intro .intro-button {
+  font-size: 1.4em;
+  letter-spacing: 5px;
+  color: #f0f0f0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+  text-align: center;
+  width: 220px;
+  text-decoration: none;
+}
+
+.intro .intro-button:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.intro .intro-button.first {
+  margin-right: 40px;
+}
+
+.intro-info {
+  height: 775px;
+  background-image: url('../img/background2.png');
+  background-position: center center;
+  background-color: #030303;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.intro-info .intro-info-labels {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.intro-info .intro-info {
+  float: left;
+}
+
+.intro-info .info-label .title {
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.4);
+}
+
+.intro-info .info-label .description {
+  font-size:  1.35em;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.intro-info .info-label.one {
+  position: relative;
+  top: 113px;
+  left: 154px;
+}
+
+.intro-info .info-label.one .description {
+  margin: 3px 0 0 44px;
+  width: 565px;
+}
+
+.intro-info .info-label.two {
+  position: relative;
+  top: 170px;
+  left: 250px;
+}
+
+.intro-info .info-label.two .description {
+  margin: 3px 0 0 -31px;
+  width: 341px;
+}
+
+.intro-info .info-label.three {
+  position: relative;
+  top: 260px;
+  left: 200px;
+}
+
+.intro-info .info-label.three .description {
+  margin: 3px 0 0 17px;
+  width: 385px;
+}
+
+.intro-install {
+  height: 1000px;
+  background-image: url('../img/background3.png');
+  background-position: center center;
+  background-color: #0f0f0f;
+}
+
+.intro-install .title {
+  margin: 75px 0 0 0;
+  font-weight: 700;
+  font-size:  2.5em;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.intro-install pre {
+  padding: 30px 0;
+  margin: 10px auto;
+  width: 550px;
+  color: #ffffff;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.intro-footer {
+  height: 60px;
+  padding-top: 20px;
+  letter-spacing: 1px;
+  color: #999999;
+  background-color: #0f0f0f;
+  text-align: center;
+}
