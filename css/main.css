@@ -179,10 +179,10 @@ a.anchor {
 }
 
 .intro-install {
-  height: 1000px;
+  height: 1270px;
   padding-top: 5px;
   background-image: url('../img/background3.png');
-  background-position: center center;
+  background-position: center bottom;
   background-color: #0c0c0c;
 }
 
