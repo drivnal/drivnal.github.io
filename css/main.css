@@ -22,6 +22,7 @@ a.anchor {
   border-radius: 0;
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  padding-right: 50px;
 }
 
 .navbar .nav {
@@ -58,6 +59,14 @@ a.anchor {
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   color: #ffffff;
+}
+
+.github-logo {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
 }
 
 .intro {
