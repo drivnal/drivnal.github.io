@@ -43,15 +43,21 @@ title: Drivnal
       <div class="intro-install">
         <h1 class="title">UBUNTU INSTALL</h1>
         <pre class="commands">
-          $ sudo apt-get install python-pip
-          $ sudo pip install drivnal
-          $ sudo start drivnal
+          $ sudo add-apt-repository ppa:drivnal/ppa
+          $ sudo apt-get update
+          $ sudo apt-get install drivnal
           Open http://localhost:6500/</pre>
         <h1 class="title">ARCH LINUX INSTALL</h1>
         <pre class="commands">
           $ yaourt -S drivnal
           $ systemctl start drivnal.service
           $ systemctl enable drivnal.service
+          Open http://localhost:6500/</pre>
+        <h1 class="title">PIP INSTALL</h1>
+        <pre class="commands">
+          $ sudo apt-get install python-pip
+          $ sudo pip install drivnal
+          $ sudo start drivnal
           Open http://localhost:6500/</pre>
         <h1 class="title">DEVELOPMENT SETUP</h1>
         <pre class="commands">
