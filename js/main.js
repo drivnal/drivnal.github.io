@@ -1,9 +1,16 @@
-$('.intro-screenshots .button').click(function(evt) {
+$('.intro-screenshots .button, .intro-screenshots img').click(function(evt) {
   var screenshot;
   var curScreenshot = $('.intro-screenshots img.current').attr(
     'src').substr(14, 1);
 
-  if ($(evt.target).hasClass('screenshot1')) {
+  if ($(evt.target).is('img')) {
+    screenshot = parseInt(curScreenshot, 10) + 1;
+    if (screenshot > 3) {
+      screenshot = 1;
+    }
+    screenshot = screenshot.toString();
+  }
+  else if ($(evt.target).hasClass('screenshot1')) {
     screenshot = '1';
   }
   else if ($(evt.target).hasClass('screenshot2')) {
