@@ -42,7 +42,7 @@ a.anchor {
 
 .navbar .nav > li > a {
   font-size: 1.3em;
-  padding: 32px 40px 32px 40px;
+  padding: 32px 35px 32px 35px;
 }
 
 .navbar .nav .active a,
@@ -187,10 +187,69 @@ a.anchor {
   width: 385px;
 }
 
+.intro-screenshots {
+  height: 795px;
+  padding-top: 5px;
+  background-image: url('../img/background3.png');
+  background-position: center top;
+  background-color: #090909;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.intro-screenshots .screenshots {
+  width: 900px;
+  height: 570px;
+  margin: 75px auto 0 auto;
+  display: block;
+  box-shadow: 0 0 25px #aaaaaa;
+}
+
+.intro-screenshots img {
+  position: absolute;
+  width: 900px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.intro-screenshots img.current {
+  opacity: 0.85;
+}
+
+.intro-screenshots .buttons {
+  margin: 50px auto 0 auto;
+  width: 104px;
+}
+
+.intro-screenshots .button {
+  background-color: #3f3f3f;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.intro-screenshots .button:hover {
+  background-color: #ffffff;
+}
+
+.intro-screenshots .button:active {
+  background-color: #3f3f3f;
+}
+
+.intro-screenshots .button.current,
+.intro-screenshots .button.current:hover {
+  background-color: #d6d6d6;
+}
+
 .intro-install {
   height: 1475px;
   padding-top: 5px;
-  background-image: url('../img/background3.png');
+  background-image: url('../img/background4.png');
   background-position: center bottom;
   background-color: #0c0c0c;
 }
