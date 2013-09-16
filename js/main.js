@@ -1,3 +1,13 @@
+$('a[href^="#"]').on('click', function(evt) {
+  console.log(this, this.hash)
+    evt.preventDefault();
+    $('html, body').stop().animate({
+        'scrollTop': $(this.hash).offset().top
+    }, 750, 'swing', function() {
+        window.location.hash = this.hash;
+    });
+});
+
 $('.intro-screenshots .button, .intro-screenshots img').click(function(evt) {
   var screenshot;
   var curScreenshot = $('.intro-screenshots img.current').attr(
