@@ -1,5 +1,4 @@
 $('a[href^="#"]').on('click', function(evt) {
-  console.log(this, this.hash)
     evt.preventDefault();
     $('html, body').stop().animate({
         'scrollTop': $(this.hash).offset().top
