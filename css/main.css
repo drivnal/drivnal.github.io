@@ -138,10 +138,6 @@ a:focus {
   margin: 0 auto;
 }
 
-.intro-info .intro-info {
-  float: left;
-}
-
 .intro-info .info-label .title {
   font-weight: 700;
   font-size: 2.5em;
