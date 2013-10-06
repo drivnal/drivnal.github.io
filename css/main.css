@@ -231,6 +231,7 @@ a:focus {
   height: 12px;
   display: inline-block;
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .intro-screenshots .button:hover {
