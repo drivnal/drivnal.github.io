@@ -77,7 +77,7 @@ a:focus {
 .intro {
   margin-top: 20px;
   padding-top: 125px;
-  height: 665px;
+  padding-bottom: 65px;
   background-image: url('../img/background1.png');
   background-position: center center;
   background-color: #030303;
@@ -189,8 +189,8 @@ a:focus {
 }
 
 .intro-screenshots {
-  height: 795px;
   padding-top: 5px;
+  padding-bottom: 60px;
   background-image: url('../img/background3.png');
   background-position: center top;
   background-color: #090909;
@@ -250,8 +250,8 @@ a:focus {
 }
 
 .intro-install {
-  height: 1475px;
   padding-top: 5px;
+  padding-bottom: 120px;
   background-image: url('../img/background4.png');
   background-position: center bottom;
   background-color: #0c0c0c;
