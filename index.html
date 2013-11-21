@@ -16,32 +16,39 @@ title: Drivnal
       </div>
     </div>
     <div class="row">
-      <div class="intro-info">
-        <div class="intro-info-labels">
-          <div class="info-label one">
-            <span class="title">&bull; Continuous incremental snapshots</span>
+      <a id="features" class="anchor"></a>
+      <div class="intro-features">
+        <div class="features-title">
+          <h1 class="title">Features</h1>
+        </div>
+        <ul class="features-boxes clearfix">
+          <li class="features-box">
+            <div class="title">Continuous snapshots</div>
             <p class="description">
-              All snapshot's copy only the changed data and hard link unchanged data from the previous snapshot. Allowing continuous incremental snapshots without the need to repeat full backups.
+              Snapshot's copy only the changed data. Unchanged data is hard link from the previous snapshot.
             </p>
-          </div>
-          <div class="info-label two">
-            <span class="title">&bull; Web interface</span>
+          </li>
+          <li class="features-box">
+            <div class="title">Web interface</div>
             <p class="description">
               All configuration and backup/restore operations are done trough a simple web interface.
             </p>
-          </div>
-          <div class="info-label three">
-            <span class="title">&bull; Free and open source</span>
+          </li>
+          <li class="features-box last">
+            <div class="title">Email alerts</div>
             <p class="description">
-              Drivnal is free and open sourced under the Affero General Public License v3.
+              Optional email alerts can be enabled to send an email when a scheduled snapshot has an error.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="row">
       <a id="screenshots" class="anchor"></a>
       <div class="intro-screenshots">
+        <div class="screenshots-title">
+          <h1 class="title">Screenshots</h1>
+        </div>
         <div class="screenshots">
           <img class="screenshot1 current" src="img/screenshot1.png" alt="Screenshot 1">
           <img class="screenshot2" src="img/screenshot2.png" alt="Screenshot 2">
@@ -57,39 +64,299 @@ title: Drivnal
     <div class="row">
       <a id="install" class="anchor"></a>
       <div class="intro-install">
-        <h1 class="title">UBUNTU INSTALL</h1>
-        <pre class="commands">
-          $ sudo add-apt-repository ppa:drivnal/ppa
-          $ sudo apt-get update
-          $ sudo apt-get install drivnal
-          Open http://localhost:6500/</pre>
-        <h1 class="title">ARCH LINUX INSTALL</h1>
-        <pre class="commands">
-          $ yaourt -S drivnal
-          $ systemctl start drivnal.service
-          $ systemctl enable drivnal.service
-          Open http://localhost:6500/</pre>
-        <h1 class="title">PIP INSTALL</h1>
-        <pre class="commands">
-          $ sudo apt-get install python-pip
-          $ sudo pip install drivnal
-          $ sudo start drivnal
-          Open http://localhost:6500/</pre>
-        <h1 class="title">DEVELOPMENT SETUP</h1>
-        <pre class="commands">
-          $ git clone https://github.com/drivnal/drivnal.git
-          $ cd drivnal
-          $ python2 server.py
-          Open http://localhost:6500/</pre>
-        <h1 class="title">VAGRANT SETUP</h1>
-        <pre class="commands">
-          $ git clone https://github.com/drivnal/drivnal.git
-          $ cd drivnal
-          $ vagrant up testing
-          $ vagrant ssh testing
-          $ sudo drivnal
-          Open http://localhost:6500/
-          Open http://localhost:8080/collectd</pre>
+        <h1 class="title">Install</h1>
+        <h2 class="install-header">Select linux distribution</h2>
+        <div class="install-buttons btn-group clearfix">
+          <button type="button" class="btn ubuntu active"></button>
+          <button type="button" class="btn arch"></button>
+          <button type="button" class="btn centos"></button>
+        </div>
+        <div class="distro-instructions">
+          <div class="ubuntu-instructions">
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>1</span>
+              </div>
+              <div class="install-point-description">
+                Install "add-apt-repository" <pre>apt-get install -y python-software-properties</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>2</span>
+              </div>
+              <div class="install-point-description">
+                Add pritunl repository <pre>add-apt-repository ppa:drivnal/ppa</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>3</span>
+              </div>
+              <div class="install-point-description">
+                Update package list <pre>apt-get update</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>4</span>
+              </div>
+              <div class="install-point-description">
+                Install pritunl <pre>apt-get install -y drivnal</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>5</span>
+              </div>
+              <div class="install-point-description">
+                Use <pre>apt-get upgrade -y</pre> to update when a new version is released
+              </div>
+            </div>
+          </div>
+          <div class="arch-instructions">
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>1</span>
+              </div>
+              <div class="install-point-description">
+                Download <pre>curl -O https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>2</span>
+              </div>
+              <div class="install-point-description">
+                Download <pre>curl -O https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>3</span>
+              </div>
+              <div class="install-point-description">
+                Extract archive <pre>tar zxf package-query.tar.gz</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>4</span>
+              </div>
+              <div class="install-point-description">
+                Extract archive <pre>tar zxf yaourt.tar.gz</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>5</span>
+              </div>
+              <div class="install-point-description">
+                Change directory <pre>cd package-query</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>6</span>
+              </div>
+              <div class="install-point-description">
+                Synchronize package databases <pre>pacman -Sy</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>7</span>
+              </div>
+              <div class="install-point-description">
+                Build and install package-query <pre>makepkg -si --asroot</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>8</span>
+              </div>
+              <div class="install-point-description">
+                Change directory <pre>cd ../yaourt</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>9</span>
+              </div>
+              <div class="install-point-description">
+                Build and install yaourt <pre>makepkg -si --asroot</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>10</span>
+              </div>
+              <div class="install-point-description">
+                Install drivnal <pre>yaourt -S drivnal</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>11</span>
+              </div>
+              <div class="install-point-description">
+                Start drivnal service <pre>systemctl start drivnal.service</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>12</span>
+              </div>
+              <div class="install-point-description">
+                Enable drivnal service to autostart <pre>systemctl enable drivnal.service</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>13</span>
+              </div>
+              <div class="install-point-description">
+                Use <pre>yaourt -Syua</pre> to update when a new version is released
+              </div>
+            </div>
+          </div>
+          <div class="centos-instructions">
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>1</span>
+              </div>
+              <div class="install-point-description">
+                Install rsync package <pre>yum install rsync</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>2</span>
+              </div>
+              <div class="install-point-description">
+                Install python easy_install <pre>yum install python-setuptools</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>3</span>
+              </div>
+              <div class="install-point-description">
+                Install python-pip <pre>easy_install pip</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>4</span>
+              </div>
+              <div class="install-point-description">
+                Install importlib if python2.7 is not installed <pre>pip install importlib</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>5</span>
+              </div>
+              <div class="install-point-description">
+                Install drivnal <pre>pip install drivnal</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>6</span>
+              </div>
+              <div class="install-point-description">
+                Start drivnal service <pre>start drivnal</pre>
+              </div>
+            </div>
+            <div class="install-point clearfix">
+              <div class="install-point-label header">
+                <span>7</span>
+              </div>
+              <div class="install-point-description">
+                Use <pre>pip install --upgrade drivnal</pre> to update when a new version is released. When upgrading with pip <pre>/etc/drivnal.conf</pre> will be overwritten so a backup will need to be created before upgrading
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="install-header">Configure drivnal</h2>
+        <div class="conf-instructions">
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>1</span>
+            </div>
+            <div class="install-point-description">
+              Goto the servers IP address on port 6500 <pre>http://&#60;SERVER_ADDRESS&#62;:6500/</pre>
+            </div>
+          </div>
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>2</span>
+            </div>
+            <div class="install-point-description">
+              In the new backup volume section enter a name for the backup volume
+            </div>
+          </div>
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>3</span>
+            </div>
+            <div class="install-point-description">
+              Select a directory to backup and an empty directory to store the backups
+            </div>
+          </div>
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>4</span>
+            </div>
+            <div class="install-point-description">
+              Select any directories to exclude them from the backup
+            </div>
+          </div>
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>5</span>
+            </div>
+            <div class="install-point-description">
+              Click "New Snapshot" to create the first snapshot.
+            </div>
+          </div>
+        </div>
+        <h2 class="install-header">Restore data</h2>
+        <div class="conf-instructions">
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>1</span>
+            </div>
+            <div class="install-point-description">
+              To restore data first select a snapshot from the snapshot list
+            </div>
+          </div>
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>2</span>
+            </div>
+            <div class="install-point-description">
+              Select the files and directories that need to be restored then drag them to right
+            </div>
+          </div>
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>3</span>
+            </div>
+            <div class="install-point-description">
+              Restoring files will overwrite files with the same name
+            </div>
+          </div>
+          <div class="install-point clearfix">
+            <div class="install-point-label header">
+              <span>4</span>
+            </div>
+            <div class="install-point-description">
+              Wait for the restore task to complete before accessing the data
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">

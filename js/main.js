@@ -39,3 +39,31 @@ $('.intro-screenshots .button, .intro-screenshots img').click(function(evt) {
   $('.intro-screenshots img.current').removeClass('current');
   $('.intro-screenshots img.screenshot' + screenshot).addClass('current');
 });
+
+$('.install-buttons button').click(function(evt) {
+  $(this).siblings().removeClass('active');
+  $(this).addClass('active');
+  var changeInstructions = function(page) {
+    $('.distro-instructions').fadeOut(450, function() {
+      var pages;
+      pages = [
+        '.ubuntu-instructions',
+        '.arch-instructions',
+        '.centos-instructions'
+      ];
+      pages.splice(pages.indexOf(page), 1);
+      $(pages.join(', ')).hide();
+      $(page).show();
+      $('.distro-instructions').fadeIn(450);
+    });
+  };
+  if ($(this).hasClass('ubuntu')) {
+    changeInstructions('.ubuntu-instructions');
+  }
+  else if ($(this).hasClass('arch')) {
+    changeInstructions('.arch-instructions');
+  }
+  else if ($(this).hasClass('centos')) {
+    changeInstructions('.centos-instructions');
+  }
+});

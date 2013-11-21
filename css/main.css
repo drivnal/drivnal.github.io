@@ -14,6 +14,12 @@ a:focus {
   outline: none;
 }
 
+.title,
+.header {
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .row {
   margin: 0;
   width: 100%;
@@ -126,12 +132,70 @@ a:focus {
   margin-right: 40px;
 }
 
-.intro-info {
-  height: 775px;
+.intro-features {
+  padding-top: 55px;
+  padding-bottom: 90px;
   background-image: url('../img/background2.png');
   background-position: center center;
-  background-color: #030303;
+  background-color: #0c0c0c;
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.intro-features .features-title,
+.intro-screenshots .screenshots-title {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.3);
+  font-size: 1.2em;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.intro-features .features-boxes {
+  width: 1030px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.intro-features .features-box {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.4);
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  border-radius: 6px;
+  list-style-type: none;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  height: 220px;
+}
+
+.intro-features .features-box.last {
+  margin-right: 0;
+}
+
+.intro-features .features-box .title {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #f0f0f0;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 5px;
+}
+
+.intro-features .features-box .description {
+  font-size: 1.2em;
+  padding: 15px;
+  color: #f0f0f0;
+  text-align: center;
 }
 
 .intro-info .intro-info-labels {
@@ -189,8 +253,8 @@ a:focus {
 }
 
 .intro-screenshots {
-  padding-top: 5px;
-  padding-bottom: 60px;
+  padding-top: 55px;
+  padding-bottom: 80px;
   background-image: url('../img/background3.png');
   background-position: center top;
   background-color: #090909;
@@ -200,7 +264,7 @@ a:focus {
 .intro-screenshots .screenshots {
   width: 900px;
   height: 570px;
-  margin: 75px auto 0 auto;
+  margin: 0 auto;
   display: block;
   box-shadow: 0 0 25px #aaaaaa;
 }
@@ -251,23 +315,34 @@ a:focus {
 
 .intro-install {
   padding-top: 5px;
-  padding-bottom: 120px;
+  padding-bottom: 75px;
   background-image: url('../img/background4.png');
-  background-position: center bottom;
   background-color: #0c0c0c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
 
-.intro-install .title {
-  margin-top: 75px;
+.intro-install .title,
+.intro-install .install-header {
   font-weight: 700;
-  font-size:  2.5em;
   letter-spacing: 1px;
   color: #f0f0f0;
   text-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
   text-align: center;
 }
 
-.intro-install pre {
+.intro-install .title {
+  margin-top: 75px;
+  font-size:  2.5em;
+}
+
+.intro-install .install-header {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size:  1.9em;
+}
+
+.intro-install pre,
+.intro-faq pre {
   padding: 30px 0;
   margin: 10px auto;
   width: 550px;
@@ -284,4 +359,138 @@ a:focus {
   color: #999999;
   background-color: #0c0c0c;
   text-align: center;
+}
+
+.install-buttons {
+  margin: 0 auto;
+  width: 590px;
+  white-space: nowrap;
+  border-radius: 10px;
+  display: block;
+}
+
+.install-buttons button,
+.install-buttons button:hover,
+.install-buttons button.active,
+.install-buttons button.active:hover {
+  height: 80px;
+  width: 33.333333%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+  border: 0 none;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: none;
+}
+
+.install-buttons button .label {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #5f3496;
+}
+
+.install-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.install-buttons button.active,
+.install-buttons button.active:hover {
+  background-color: rgba(80, 80, 80, 0.25);
+}
+
+.install-buttons .ubuntu {
+  background-image: url('../img/ubuntu.png');
+}
+
+.install-buttons .arch {
+  background-image: url('../img/arch.png');
+}
+
+.install-buttons .centos {
+  background-image: url('../img/centos.png');
+}
+
+.install-point,
+.faq-point {
+  clear: both;
+  width: 753px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.install-point-label,
+.faq-point-label {
+  width: 50px;
+  height: 50px;
+  padding-top: 7px;
+  border-radius: 50%;
+  color: #f0f0f0;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
+  vertical-align: top;
+  float: left;
+}
+
+.install-point-description,
+.faq-point-description {
+  font-weight: bold;
+  width: 690px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  color: #f0f0f0;
+  font-size: 1.2em;
+  padding: 13px;
+  float: right;
+}
+
+.question .faq-point-description {
+  font-size: 1.8em;
+  padding: 8px 13px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.answer {
+  padding-top: 10px;
+}
+
+.answer .faq-point-label {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.linode-instructions,
+.amazon-aws-instructions,
+.arch-instructions,
+.centos-instructions,
+.windows-client-instructions,
+.osx-client-instructions {
+  display: none;
+}
+
+.install-point-description pre,
+.faq-point-description pre {
+  position: relative;
+  top: -2px;
+  display: inline;
+  padding: 4px 4px 2px 4px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.conf-instructions .install-point:first-child,
+.faq .faq-point:first-child {
+  padding-top: 0;
+}
+
+.intro-install a {
+  color: #9cc7fd;
+}
+
+.intro-faq {
+  padding-top: 55px;
+  padding-bottom: 75px;
+  background-color: #e6380d;
 }
