@@ -362,6 +362,80 @@ title: Drivnal
       </div>
     </div>
     <div class="row">
+      <a id="faq" class="anchor"></a>
+      <div class="intro-faq">
+        <div class="faq-title">
+          <h1 class="title">Frequently Asked Questions</h1>
+        </div>
+        <div class="faq">
+          <div class="faq-point question clearfix">
+            <div class="faq-point-label header">
+              <span>Q</span>
+            </div>
+            <div class="faq-point-description">
+              <span>Is the demo a real installation?</span>
+            </div>
+          </div>
+          <div class="faq-point answer clearfix">
+            <div class="faq-point-label header">
+              <span>A</span>
+            </div>
+            <div class="faq-point-description">
+              The demo uses javascript to emulate the functionality of the python server available in a real installation. All of the data is stored locally and is reset when the page is reloaded. Some functionality is missing from the demo
+            </div>
+          </div>
+          <div class="faq-point question clearfix">
+            <div class="faq-point-label header">
+              <span>Q</span>
+            </div>
+            <div class="faq-point-description">
+              <span>Can snapshots be safely deleted?</span>
+            </div>
+          </div>
+          <div class="faq-point answer clearfix">
+            <div class="faq-point-label header">
+              <span>A</span>
+            </div>
+            <div class="faq-point-description">
+              Deleting a snapshot either from the web interface or directly removing the snapshot directory will not effect other snapshots
+            </div>
+          </div>
+          <div class="faq-point question clearfix">
+            <div class="faq-point-label header">
+              <span>Q</span>
+            </div>
+            <div class="faq-point-description">
+              <span>Can a backup volume be disconnected?</span>
+            </div>
+          </div>
+          <div class="faq-point answer clearfix">
+            <div class="faq-point-label header">
+              <span>A</span>
+            </div>
+            <div class="faq-point-description">
+              When a mount path for a backup volume is unmounted the volume will not appear in the web interface and scheduled snapshots will be paused until the path is mounted again
+            </div>
+          </div>
+          <div class="faq-point question clearfix">
+            <div class="faq-point-label header">
+              <span>Q</span>
+            </div>
+            <div class="faq-point-description">
+              <span>What happens to failed or interrupted snapshots?</span>
+            </div>
+          </div>
+          <div class="faq-point answer clearfix">
+            <div class="faq-point-label header">
+              <span>A</span>
+            </div>
+            <div class="faq-point-description">
+              When a snapshot fails or is interrupted it will be marked as failed in the web interface. The failed snapshot will be automatically removed if a minimum free space or snapshot limit is configured
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="intro-footer">
         <span>created by <a href="//github.com/zachhuff386">github.com/zachhuff386</a></span>
       </div>
