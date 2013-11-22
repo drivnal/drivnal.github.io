@@ -379,7 +379,7 @@ a:focus {
   background-position: center;
   border-radius: 6px;
   border: 0 none;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.20);
   box-shadow: none;
 }
 
@@ -428,7 +428,7 @@ a:focus {
   color: #f0f0f0;
   font-size: 1.8em;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(50, 50, 50, 0.4);
   text-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
   vertical-align: top;
   float: left;
