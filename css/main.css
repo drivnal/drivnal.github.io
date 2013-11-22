@@ -438,7 +438,7 @@ a:focus {
 .faq-point-description {
   font-weight: bold;
   width: 690px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 6px;
   color: #f0f0f0;
   font-size: 1.2em;
@@ -457,7 +457,7 @@ a:focus {
 }
 
 .answer .faq-point-label {
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .linode-instructions,
