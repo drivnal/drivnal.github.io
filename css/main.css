@@ -142,7 +142,8 @@ a:focus {
 }
 
 .intro-features .features-title,
-.intro-screenshots .screenshots-title {
+.intro-screenshots .screenshots-title,
+.intro-install .install-title {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 15px;
@@ -151,6 +152,10 @@ a:focus {
   font-size: 1.2em;
   font-weight: 700;
   font-size: 2.5em;
+}
+
+.intro-install .install-title {
+  padding-bottom: 0;
 }
 
 .intro-features .features-boxes {
@@ -314,25 +319,19 @@ a:focus {
 }
 
 .intro-install {
-  padding-top: 5px;
+  padding-top: 60px;
   padding-bottom: 75px;
   background-image: url('../img/background4.png');
   background-color: #0c0c0c;
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
 
-.intro-install .title,
 .intro-install .install-header {
   font-weight: 700;
   letter-spacing: 1px;
   color: #f0f0f0;
   text-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
   text-align: center;
-}
-
-.intro-install .title {
-  margin-top: 75px;
-  font-size:  2.5em;
 }
 
 .intro-install .install-header {
