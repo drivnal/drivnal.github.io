@@ -449,7 +449,7 @@ a:focus {
 .question .faq-point-description {
   font-size: 1.8em;
   padding: 8px 13px;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(100, 100, 100, 0.2);
 }
 
 .answer {
