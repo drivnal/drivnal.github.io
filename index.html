@@ -464,6 +464,22 @@ title: Drivnal
               Existing volumes can be added by selecting "Create New Backup Volume" and setting the location of the existing volume. The existing configuration for the volume will be loaded when the volume is added
             </div>
           </div>
+          <div class="faq-point question clearfix">
+            <div class="faq-point-label header">
+              <span>Q</span>
+            </div>
+            <div class="faq-point-description">
+              <span>Can snapshots be disabled if a process is running?</span>
+            </div>
+          </div>
+          <div class="faq-point answer clearfix">
+            <div class="faq-point-label header">
+              <span>A</span>
+            </div>
+            <div class="faq-point-description">
+              A comma separated list such as <pre>ignore_procs=chromium,vlc</pre> can be added to a volume conf file to ignore scheduled snapshots if one of the specified process names are running. The volume conf file <pre>drivnal.conf</pre> is located in the backup volume directory
+            </div>
+          </div>
         </div>
       </div>
     </div>
